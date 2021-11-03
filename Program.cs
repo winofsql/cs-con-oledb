@@ -18,7 +18,7 @@ namespace cs_con_oledb_01
             myConAccess.ConnectionString =
                 string
                     .Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};",
-                    @"\app\workspace\subject-1031\cs-con-oledb-01\販売管理.accdb");
+                    @"\app\workspace\販売管理.accdb");
 
             // 接続を開く
             try
