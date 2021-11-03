@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.OleDb;
 
-namespace cs_con_oledb
+namespace cs_con_oledb_01
 {
     class Program
     {
@@ -16,7 +16,7 @@ namespace cs_con_oledb
             myConAccess.ConnectionString =
                 string
                     .Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};",
-                    @"\app\workspace\subject-1031\cs-con-oledb\販売管理.accdb");
+                    @"\app\workspace\subject-1031\cs-con-oledb-01\販売管理.accdb");
 
             // 接続を開く
             try
@@ -29,6 +29,10 @@ namespace cs_con_oledb
             {
                 Console.WriteLine("接続エラーです:" + ex.Message);
             }
+
+            Console.WriteLine("処理が終了しました : Enter キーを入力してください");
+            Console.ReadLine();
+
         }
     }
 }
