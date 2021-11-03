@@ -68,20 +68,20 @@ namespace cs_con_oledb_01
             Console.ReadLine();
 
         }
-        private static string GetValue(OleDbDataReader myReader, string p) {
+        private static string GetValue(OleDbDataReader myReader, string fld_name) {
 
             string ret = "";
-            int fld = 0;
+            int fld_no = 0;
 
             // 指定された列名より、テーブル内での定義順序番号を取得
-            fld = myReader.GetOrdinal(p);
+            fld_no = myReader.GetOrdinal(fld_name);
             // 定義順序番号より、NULL かどうかをチェック
-            if (myReader.IsDBNull(fld)) {
+            if (myReader.IsDBNull(fld_no)) {
                 ret = "";
             }
             else {
                 // NULL でなければ内容をオブジェクトとして取りだして文字列化する
-                ret = myReader.GetValue(fld).ToString();
+                ret = myReader.GetValue(fld_no).ToString();
             }
 
             // 列の値を返す
