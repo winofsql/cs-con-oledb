@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data.OleDb;
 
 namespace cs_con_oledb_01
@@ -16,9 +16,7 @@ namespace cs_con_oledb_01
             // *************************************
             myConAccess = new OleDbConnection();
             myConAccess.ConnectionString =
-                string
-                    .Format("Provider=Microsoft.ACE.OLEDB.12.0;Data Source={0};",
-                    @"\app\workspace\販売管理.accdb");
+                @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\app\workspace\販売管理.accdb;";
 
             // 接続を開く
             try
