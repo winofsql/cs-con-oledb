@@ -17,6 +17,7 @@ namespace cs_con_oledb_01
             myConAccess = new OleDbConnection();
             myConAccess.ConnectionString =
                 @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\app\workspace\販売管理.accdb;";
+                // @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\app\workspace\販売管理.xlsx;Extended Properties=""Excel 12.0 Xml;HDR=YES;IMEX=1""";
 
             // 接続を開く
             try
