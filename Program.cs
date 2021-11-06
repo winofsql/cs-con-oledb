@@ -1,7 +1,7 @@
 using System;
 using System.Data.OleDb;
 
-namespace cs_con_oledb_01
+namespace cs_con_oledb_access_select
 {
     class Program
     {
